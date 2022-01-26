@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
-
+  <link rel="manifest" href=./manifest.json">
   <title>Budget Tracker</title>
 </head>
 <body>
@@ -48,7 +48,7 @@
     (function() {
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
-          .register("./service-worker.js")
+          .register("./file-worker.js")
           .then(() => console.log("File Service Worker registered successfully."))
           .catch(error =>
             console.log("Service Worker registration failed:", error)
@@ -60,7 +60,7 @@
     (function() {
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
-          .register("./money-worker.js")
+          .register("./data-worker.js")
           .then(() => console.log("Data Service Worker registered successfully."))
           .catch(error =>
             console.log("Service Worker registration failed:", error)
