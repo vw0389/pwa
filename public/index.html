@@ -49,7 +49,19 @@
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
           .register("./service-worker.js")
-          .then(() => console.log("Service Worker registered successfully."))
+          .then(() => console.log("File Service Worker registered successfully."))
+          .catch(error =>
+            console.log("Service Worker registration failed:", error)
+          );
+      }
+    })();
+  </script>
+  <script type="text/javascript">
+    (function() {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./money-worker.js")
+          .then(() => console.log("Data Service Worker registered successfully."))
           .catch(error =>
             console.log("Service Worker registration failed:", error)
           );

@@ -1,16 +1,16 @@
-const APP_PREFIX = 'PWA-'
+const APP_PREFIX = 'PWA-FILES-'
 const VERSION = '01'
 const CACHE_NAME = APP_PREFIX + VERSION
 const FILES_TO_CACHE = [
     "./index.html",
-    "./css/style.css",
+    "./css/styles.css",
     "./js/idb.js",
     "./js/index.js"
 ]
 
 
 
-// Respond with cached resources
+// // Respond with cached resources
 self.addEventListener('fetch', function (e) {
     console.log('fetch request : ' + e.request.url)
     e.respondWith(
@@ -60,5 +60,3 @@ self.addEventListener('fetch', function (e) {
       })
     );
   });
-
-  module.exports = CACHE_NAME;

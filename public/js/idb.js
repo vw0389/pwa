@@ -6,6 +6,6 @@ const request = indexedDB.open('PWA', 1);
 request.onupgradeneeded = function(event) {
     // save a reference to the database 
     const db = event.target.result;
-    // create an object store (table) called `new_pizza`, set it to have an auto incrementing primary key of sorts 
+    // create an object store (table) called `transactions`, set it to have an auto incrementing primary key of sorts 
     db.createObjectStore('transactions', { autoIncrement: true });
   };
