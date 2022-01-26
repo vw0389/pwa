@@ -21,3 +21,5 @@ THEN the deposits or expenses added while they were offline are added to their t
 
 
 ## Links
+Deployed: https://quiet-wildwood-80381.herokuapp.com/
+Git: https://github.com/vw0389/pwa
