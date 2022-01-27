@@ -1,5 +1,7 @@
+const { version } = require("mongoose")
+
 const APP_PREFIX = 'PWA-FILES-'
-const VERSION = '01'
+const VERSION = '1'
 const CACHE_NAME = APP_PREFIX + VERSION
 const FILES_TO_CACHE = [
     "./index.html",
@@ -68,3 +70,5 @@ self.addEventListener('fetch', function (e) {
       })
     );
   });
+
+  module.exports = VERSION;
