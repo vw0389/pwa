@@ -1,3 +1,0 @@
-const APP_PREFIX = 'PWA-DATA-'
-const VERSION = '01'
-const CACHE_NAME = APP_PREFIX + VERSION

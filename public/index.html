@@ -56,17 +56,5 @@
       }
     })();
   </script>
-  <script type="text/javascript">
-    (function() {
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("./data-worker.js")
-          .then(() => console.log("Data Service Worker registered successfully."))
-          .catch(error =>
-            console.log("Service Worker registration failed:", error)
-          );
-      }
-    })();
-  </script>
 </body>
 </html>
